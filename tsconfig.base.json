@@ -15,7 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@dimiceli-ui/button": ["packages/button/src/index.ts"]
+      "@dimiceli-ui/button": ["packages/button/src/index.ts"],
+      "@dimiceli-ui/footer": ["packages/footer/src/index.ts"],
+      "@dimiceli-ui/form": ["packages/form/src/index.ts"],
+      "@dimiceli-ui/grid": ["packages/grid/src/index.ts"],
+      "@dimiceli-ui/header": ["packages/header/src/index.ts"],
+      "@dimiceli-ui/searchBar": ["packages/searchBar/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
