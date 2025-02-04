@@ -1,6 +1,6 @@
 import styles from './button.module.css';
 
-export const Button = () => {
+export const MyButton = () => {
   return (
     <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
       Button
@@ -8,4 +8,4 @@ export const Button = () => {
   );
 }
 
-export default Button;
+export default MyButton;

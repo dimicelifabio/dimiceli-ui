@@ -1,0 +1,102 @@
+.vertical-navbar {  
+    margin-top: 60px;
+    width: 250px;
+    height: auto;
+    background-color: #2c2c2c;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: width 0.3s ease;
+}
+
+.vertical-navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-section {
+    margin-bottom: 10px;
+}
+
+/* Stile del titolo della sezione */
+.section-title {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.section-title:hover {
+    background-color: #3d3d3d;
+}
+
+/* Aggiunta di una freccia accanto al titolo per indicare espansione */
+.section-title::after {
+    content: "▼";
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+/* Ruota la freccia quando la sezione è aperta */
+.section-title.open::after {
+    transform: rotate(180deg);
+}
+
+/* Sottolista */
+.sublist {
+    padding-left: 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease;
+    opacity: 0;
+}
+
+/* Mostra la sottolista quando la sezione è aperta */
+.sublist.open {
+    max-height: 500px; /* Imposta un valore grande sufficiente per la transizione */
+    opacity: 1;
+}
+
+/* Stile degli elementi della sottolista */
+.sublist li {
+    margin: 5px 0;
+}
+
+/* Stile dei link */
+.sublist li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.sublist li a:hover {
+    background-color: #575757;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .vertical-navbar {
+        width: 200px;
+    }
+
+    .section-title {
+        font-size: 16px;
+    }
+
+    .sublist li a {
+        font-size: 14px;
+        padding: 6px;
+    }
+}

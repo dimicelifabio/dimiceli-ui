@@ -2,7 +2,7 @@ import styles from './footer.module.css';
 
 export const Footer = () => {
   return (
-      <footer className="bg-gray-900 text-white py-4">
+      <footer className="bg-gray-900 text-white py-4" style={{width: "80%"}}>
         <div className="container mx-auto px-4 flex justify-between">
           <div>
             <h4 className="font-bold text-sm mb-2">Home</h4>

@@ -1,6 +1,6 @@
 import styles from './Form.module.css';
 
-export function Form() {
+export const Form = () => {
   return (
     <div className={styles['container']}>
       <h1>Welcome to Form!</h1>
